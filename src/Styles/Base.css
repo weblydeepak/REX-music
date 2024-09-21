@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+.screenConatiner{
+    width: calc(100% - 100px);
+      background-color: #1E2A3E;
+      border-radius: 30px;
+      background-color: #1e2a3e;
+      opacity: 1;
+      background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #1e2a3e 40px ), repeating-linear-gradient( #23365655, #233656 );
+      
+  }
+
+  .flex{
+    display: flex;
+  }

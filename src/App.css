@@ -1,0 +1,9 @@
+.mainCotsiner{
+    height: 99.9vh;
+    width: 100vw;
+    background-color: #E99D72;
+    border-radius: 30px;
+    display: flex;
+}
+
+

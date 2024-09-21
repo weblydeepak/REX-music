@@ -1,0 +1,173 @@
+.songCardBody{
+    width: 100%;
+    height: 65%;
+    background-color: #27354d;
+    border-radius: 30px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.albumImage{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+
+.albumImage> img{
+    border-radius: 30px;
+    height: 80%;
+    width: 100%;
+    aspect-ratio: 1;   
+
+}
+
+
+
+.albumImageShadow{
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+    width: 93%;
+    margin: auto;
+    height: 80%;  
+    position: absolute;
+    z-index: -1;
+    top: 40px;
+
+}
+
+
+.albumInfoCard{
+    width: 70%;
+}
+
+
+.albumInfoCard p{
+    margin-bottom: 5px;
+    line-height: 15px;
+}
+
+.albumNameContainer{
+    width: 100%;
+    overflow: hidden;
+    color: #c4d0e3;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.titleQueue{
+  white-space: nowrap;
+  display: inline-block;
+  animation: titleQueue 12s linear infinite;
+  padding-left: 100%;
+}
+
+
+@keyframes titleQueue{
+    0%{
+        transform: translateX(0);
+    }
+   
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.albumInfo{
+    font-size: 14px;
+    color: #83878d;
+    font-weight: 500;
+}
+
+
+.albumRelease{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #83878d;
+    margin-top: 5px;
+}
+
+.queueConatiner{
+    width: 100%;
+    height: 35%;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+    background-color: #3e61d2;
+    opacity: 1;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #3e61d2 40px
+      ),
+      repeating-linear-gradient(#4767d055, #4767d0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+
+.queue{
+   height: 85%;
+   width: 80%;
+   flex-direction: column;
+   justify-content: space-between;
+    
+}
+
+
+
+.upNext{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: left;
+    margin: 10px 0;
+   
+}
+
+
+.queueList::-webkit-scrollbar {
+    display: none;
+}
+.queueList{
+    height: 80%;
+    overflow-y: auto;
+}
+
+
+.queueItem{
+    justify-content: space-between;
+    width: 100;
+    padding: 4px 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+.queueItem:hover{
+  transform: scale(0.95);
+}
+
+
+.queueItem p{
+    margin: 0;
+    cursor: pointer;
+}
+
+
+
+.trackName{
+    width: 75%;
+    text-overflow: ellipsis;
+}
