@@ -20,7 +20,7 @@ const Player = () => {
     const response= await APIkit.get(`playlists/${params.id}/tracks`);
     // console.log(response.data.items[0].track);
    if (response!==undefined) {
-    setTracks(response.data.items)
+    setTracks(response.data?.items)
     setCurrentTracks(response.data?.items[0]?.track)
    }
    } catch (error) {
@@ -41,7 +41,7 @@ const Player = () => {
   return (
     <div className='screenConatiner flex'>
       <div className="leftPlayerBody">
-      {currentTracks&&  <AudioPlayer currentTracks={currentTracks.album}  isPlaying={true} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} total={tracks} />}
+      {currentTracks&&  <AudioPlayer currentTracks={currentTracks?.album}  isPlaying={true} currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} total={tracks} />}
       </div>
       <div className="rightPlayerBody">
       {currentTracks&&<SongCard album={currentTracks.album}/>}
